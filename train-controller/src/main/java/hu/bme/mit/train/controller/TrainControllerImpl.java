@@ -49,7 +49,7 @@ public class TrainControllerImpl implements TrainController {
 
         Timer timer = new Timer();
 
-        periodicChange periodic = new periodicChange(this);
+        PeriodicChange periodic = new PeriodicChange(this);
 
         timer.schedule( periodic, 1000, 1000);
 
